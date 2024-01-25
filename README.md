@@ -15,7 +15,7 @@
 + [VS Code](https://code.visualstudio.com/)
 
 # Hosted Version of the Project:
-[Geekster M4 Assignment&mdash;CloImage Search Appck](https://alex21c.github.io/GeeksterM4AssignmentImageSearchApp/)
+[Geekster M4 Assignment&mdash;Image Search App](https://alex21c.github.io/GeeksterM4AssignmentImageSearchApp/)
 
 # Author
 [Abhishek kumar](https://www.linkedin.com/in/alex21c/), ([Geekster](https://geekster.in/) MERN Stack FS-14 Batch)
