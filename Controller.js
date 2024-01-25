@@ -5,6 +5,7 @@ class Controller{
     this.view = view;
     this.model = model;
 
+    
 
 
   }
