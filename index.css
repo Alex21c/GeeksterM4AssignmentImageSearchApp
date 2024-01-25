@@ -36,5 +36,155 @@ h1{
   margin-bottom: 1rem;
 }
 
-/* MEDIA QUERIES */
 
+/* MEDIA QUERIES */
+@media screen and (max-width:1880px){
+  div#divLightBox{
+    padding:0;
+    padding-top: 6rem;
+
+  }
+
+  div#wrapperImgAndCloseBtn{
+    width:95%;
+    display: flex;
+    justify-content: center;
+  }
+  button#btnCloseLightBox{
+    padding-right: 7rem;
+  }
+}
+@media screen and (max-width:1280px){
+ div#divResults{
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+ }
+}    
+
+@media screen and (max-width:1156px){
+  button#btnCloseLightBox{
+    padding-right: 5rem;
+  }
+}
+
+@media screen and (max-width:958px){
+  button#btnCloseLightBox{
+    padding-right: 2rem;
+    font-size: 3rem;
+  }
+  div#wrapperImgAndCloseBtn{
+    height: 100vh;
+  }
+  div#wrapperImgAndCloseBtn img{
+    width: 100%;
+    
+    /* object-fit: cover; */
+  }
+}
+
+@media screen and (max-width:880px){
+  div#divResults{
+    grid-template-columns:  30rem;   
+    row-gap: 0rem;
+  }
+  div#divResults div.wrapperImgAndDescription{
+    width: 30rem;
+    height: 30rem;;
+  }  
+  div#divResults div.wrapperImg{
+    width: 30rem;
+    height: 26rem;;
+  }
+  div#divResults div.wrapperImg img{
+    width:100%;
+    height: 100%;
+  }
+
+
+ }
+
+
+ @media screen and (max-width:618px){
+  form.wrapperSearchAndBtn{
+    flex-direction: column;
+    gap:.5rem;
+    padding:1rem 2rem;
+  }
+
+  form.wrapperSearchAndBtn input,
+  form.wrapperSearchAndBtn button{
+    padding:1rem;
+    width: 100%;
+  }
+ }
+ @media screen and (max-width:532px){
+  div#divResults div.wrapperImgAndDescription{
+    width: 25rem;
+    height: 25rem;;
+  }  
+  div#divResults div.wrapperImg{
+    width: 25rem;
+    height: 22rem;;
+  }
+  div#divResults{
+    padding: 0;
+    grid-template-columns:  25rem;
+  }
+ }
+
+ @media screen and (max-width:430px){
+  button#btnCloseLightBox{
+    padding-right: 1rem;
+  }
+  div#divResults div.wrapperImgAndDescription{
+    width: 20rem;
+    height: 20rem;;
+  }  
+  div#divResults div.wrapperImg{
+    width: 20rem;
+    height: 19rem;;
+  }
+  div#divResults{
+    padding: 0;
+    grid-template-columns:  20rem;
+    row-gap: 2rem;
+  }
+
+
+
+  header.wrapperForm{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  h1#topHeading{
+    font-size: 1.5rem;
+  }
+  h1#topHeading a{
+    font-size: 1.2rem;
+  }
+ }
+
+
+ @media screen and (max-width:382px){
+  div#divResults div.wrapperImgAndDescription{
+    width: 17rem;
+    height: 17rem;;
+  }  
+  div#divResults div.wrapperImg{
+    width: 17rem;
+    height: 15rem;;
+  }
+  div#divResults{
+    padding: 0;
+    grid-template-columns:  17rem;
+    row-gap: 2rem;
+  }
+
+  form.wrapperSearchAndBtn{
+    padding:1rem;
+  }  
+  h1#topHeading{
+    font-size: 1rem;
+  }
+ }

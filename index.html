@@ -17,24 +17,26 @@
   
 
 </head>
-<body class="relative bg-slate-500  flex flex-col items-center gap-2">
-  <header class="sticky top-0 bg-slate-700 w-full z-40 pt-3 pb-5">
+<body class="relative bg-slate-500  flex flex-col items-center gap-2 mb-10">
+  <header class="wrapperForm sticky top-0 bg-slate-700 w-full z-40 pt-3 pb-5">
     <h1 id='topHeading' class="text-center  text-zinc-50"><span class="font-semibold text-5xl" style="font-variant: small-caps;">Image Search App Assignment</span> <a href="https://www.geekster.in/full-stack-web-development-program" class="geeksterPromo text-2xl">(<span class="underline">Geekster MERN Stack Module #4</span>)</a></h1>
   
-    <form class="flex justify-center gap-2">
-      <input type="search" name="query" id="inputSearch" placeholder="Search for images..." class="bg-slate-400 p-1 pl-5 pr-5 text-zinc-50 placeholder:text-slate-200  rounded-md focus:outline-none focus:ring focus:ring-emerald-700 text-xl">
-      <button id="btnSearch" class="transition-all  text-zinc-50 bg-emerald-700 hover:bg-emerald-800 active:bg-emerald-900 focus:outline-none focus:ring focus:ring-emerald-500  rounded-md cursor-pointer p-1 pl-5 pr-5  font-semibold text-2xl">Search</button>
+    <form id='formSearchQuery' class="wrapperSearchAndBtn flex justify-center gap-2">
+      <input required type="search" name="query" id="inputSearch" placeholder="Search for images..." class="bg-slate-400 w-[30rem] p-2 pl-5 pr-5 text-zinc-50 placeholder:text-slate-200  rounded-md focus:outline-none focus:ring focus:ring-emerald-700 text-xl">
+      <button id="btnSearch" class="transition-all  text-zinc-50 bg-emerald-700 hover:bg-emerald-800 active:bg-emerald-900 focus:outline-none focus:ring focus:ring-emerald-500  rounded-md cursor-pointer p-2 pl-5 pr-5  font-semibold text-2xl">Search</button>
     </form>
   </header>
 
   <div id="divResults" class="grid grid-cols-3 gap-4 gap-y-0 p-4 ">
     <!-- will be handled by View -->
   </div>
+  <button id="btnLoadMoreImages" class="displayNone transition-all  text-zinc-50 bg-emerald-700 hover:bg-emerald-800 active:bg-emerald-900 focus:outline-none focus:ring focus:ring-emerald-500  rounded-md cursor-pointer p-2 pl-5 pr-5  font-semibold text-2xl">Load more Images</button>
+
   <div id='divLightBox' class="z-50 absolute top-0 left-0  w-full h-full p-20 flex flex-col items-center displayNone " >
     <div class="absolute top-0 left-0  w-full h-full opacity-80 bg-slate-950">
     </div>
-    <div class="absolute top-15 w-[90%] ">
-      <button id="btnCloseLightBox" class=" transition-all absolute  right-0 z-50  top-0 pr-[10rem] text-red-500 text-7xl p-3 hover:text-red-700">
+    <div id='wrapperImgAndCloseBtn' class="relative top-15 w-[95%] ">
+      <button id="btnCloseLightBox" class=" transition-all absolute  right-0 z-50  top-0 pr-[11rem] text-red-500 text-7xl p-3 hover:text-red-700">
         <i class="fa-sharp fa-solid fa-circle-xmark"></i>
       </button>
       <img class="absolute lightBoxImg rounded-md w-[90%]" src="">
