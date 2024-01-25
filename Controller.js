@@ -20,6 +20,7 @@ class Controller{
       // console.log(this.inputSearch.value, 'is the query');
       let query = this.inputSearch.value.trim();
       if(query.length>0){
+        this.model.page=1; //reset to page 1
         this.handleSearchQuery(query);
       }
     })
@@ -38,7 +39,7 @@ class Controller{
       if(!keepPhotos){
         this.view.clearPhotos();
       }
-      this.view.appendPhotos(results);
+      this.view.appendPhotos(results, query);
 
     }catch(error){
       console.error(error);

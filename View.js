@@ -38,7 +38,7 @@ class View{
     this.divResults.innerHTML='';
   }
 
-  appendPhotos(results){  
+  appendPhotos(results, query='query'){  
      
     if(!results){
       alert('error: unable to fetch new photos!');
@@ -47,7 +47,7 @@ class View{
     results.forEach((result)=>{
       let {alt_description, urls, links} = result;
       if(alt_description === null){
-        alt_description = this.query;
+        alt_description = query;
       }
       // console.log(alt_description, urls, links);
       // console.log(alt_description);
